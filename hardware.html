@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оборудование &#8212; Неофициальный FAQ по Fedora (версия 2021.02.24)</title>
+    <title>Оборудование &#8212; Неофициальный FAQ по Fedora (версия 2021.02.25)</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
@@ -932,6 +932,26 @@ pulseaudio -D
 </div>
 <p>Теперь в настройках звуковой карты появятся требуемые профили объёмного вывода.</p>
 </div>
+<div class="section" id="display-check">
+<span id="index-67"></span><span id="id42"></span><h2>Как проверить дисплей на дефектные пиксели?<a class="headerlink" href="#display-check" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Установим утилиту <strong>lcdtest</strong> из репозиториев Fedora:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo dnf install lcdtest
+</pre></div>
+</div>
+<p>Запустим её из меню приложений на том дисплее, который требуется проверить на дефектные («битые») пиксели.</p>
+<p>Управление программой осуществляется исключительно при помощи клавиатуры.</p>
+<p>Нажмём клавишу <strong>S</strong>, чтобы перейти в режим заливки всего экрана, а затем по очереди произведём переключение основных цветов (в любом порядке):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>W</strong> - заливка белым цветом;</p></li>
+<li><p><strong>R</strong> - заливка красным цветом;</p></li>
+<li><p><strong>G</strong> - заливка зелёным цветом;</p></li>
+<li><p><strong>B</strong> - заливка синим цветом;</p></li>
+<li><p><strong>K</strong> - заливка чёрным цветом.</p></li>
+</ul>
+</div></blockquote>
+<p>По окончании проверки нажмём клавишу <strong>Q</strong> для выхода.</p>
+</div>
 </div>
 
 
@@ -1029,6 +1049,7 @@ pulseaudio -D
 <li class="toctree-l2"><a class="reference internal" href="#mpris-proxy">Как включить управление воспроизведением с Bluetooth-наушников?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bluetooth-codecs">Как включить поддержку Bluetooth-кодеков высокого качества?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#audio-analog-multichannel">Как настроить многоканальный аналоговый аудиовыход?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#display-check">Как проверить дисплей на дефектные пиксели?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="development.html">Разработка и сборка пакетов</a></li>
